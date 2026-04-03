@@ -1,75 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  /* Fredlab Brand Colors */
-  --brand-forest: #1A3C10;
-  --brand-sage: #AEB7A1;
-  --brand-lime: #73FA79;
-  --brand-forest-dark: #0f2409;
-  --brand-forest-light: #2a5c1a;
+@theme {
+  /* FREDLAB Design Tokens — Dark Glassmorphism */
+  --color-background: #09090B;
+  --color-accent: #1A3C10;
+  --color-accent-light: #2D6A1C;
+  --color-accent-hover: #22500f;
 
-  /* Light mode */
-  --background: #f8faf6;
-  --foreground: #0f1a0c;
-  --surface: #ffffff;
-  --surface-glass: rgba(255, 255, 255, 0.7);
-  --border: rgba(26, 60, 16, 0.12);
-  --muted: #6b7c65;
+  --font-family-sans: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-family-display: var(--font-capriola), "Pretendard Variable", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a120a;
-    --foreground: #e8f0e5;
-    --surface: #141e12;
-    --surface-glass: rgba(20, 30, 18, 0.75);
-    --border: rgba(115, 250, 121, 0.12);
-    --muted: #8fa886;
-  }
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-surface: var(--surface);
-  --color-muted: var(--muted);
-
-  /* Brand palette */
-  --color-forest: var(--brand-forest);
-  --color-forest-dark: var(--brand-forest-dark);
-  --color-forest-light: var(--brand-forest-light);
-  --color-sage: var(--brand-sage);
-  --color-lime: var(--brand-lime);
-
-  --font-sans: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  --font-display: "Capriola", "Pretendard Variable", sans-serif;
-}
-
-/* Pretendard font */
-@font-face {
-  font-family: "Pretendard Variable";
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+/* Dark only */
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
+  background-color: #09090B;
+  color: #ffffff;
+  font-family: var(--font-family-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Glassmorphism utility */
+/* Glass card utility */
 .glass {
-  background: var(--surface-glass);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.10);
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.glass-elevated {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }

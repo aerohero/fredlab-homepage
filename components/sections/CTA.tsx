@@ -1,79 +1,46 @@
+import Link from "next/link";
+
 export default function CTA() {
   return (
-    <section
-      id="contact"
-      className="py-24"
-      style={{ background: "var(--surface)" }}
-    >
+    <section className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className="rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden"
-          style={{
-            background: "linear-gradient(135deg, var(--brand-forest) 0%, var(--brand-forest-light) 100%)",
-          }}
-        >
-          {/* Decorative orbs */}
+        <div className="relative rounded-3xl p-10 sm:p-16 text-center overflow-hidden glass-elevated">
+          {/* Decorative orb */}
           <div
-            className="absolute top-0 right-0 w-64 h-64 rounded-full blur-3xl opacity-20"
-            style={{ background: "var(--brand-lime)", transform: "translate(30%, -30%)" }}
+            className="absolute top-0 right-0 w-72 h-72 rounded-full blur-3xl opacity-15 pointer-events-none"
+            style={{ background: "#1A3C10", transform: "translate(30%, -30%)" }}
           />
           <div
-            className="absolute bottom-0 left-0 w-48 h-48 rounded-full blur-3xl opacity-15"
-            style={{ background: "var(--brand-sage)", transform: "translate(-20%, 20%)" }}
+            className="absolute bottom-0 left-0 w-48 h-48 rounded-full blur-3xl opacity-10 pointer-events-none"
+            style={{ background: "#2D6A1C", transform: "translate(-20%, 20%)" }}
           />
 
           <div className="relative z-10">
-            <span
-              className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6"
-              style={{
-                background: "var(--brand-lime)",
-                color: "var(--brand-forest)",
-              }}
-            >
+            <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6 bg-[#1A3C10] text-white/80 border border-[#2D6A1C]/50">
               지금 시작하세요
             </span>
 
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              창업 여정을 함께 시작할 준비가
+              창업의 다음 단계,
               <br />
-              되셨나요?
+              함께 고민합니다.
             </h2>
-            <p className="text-base sm:text-lg mb-10" style={{ color: "rgba(255,255,255,0.75)" }}>
-              1:1 코칭 신청, 프로그램 문의, 기관 출강 제안 모두 환영합니다.
+            <p className="text-base sm:text-lg text-white/60 max-w-xl mx-auto mb-10 leading-relaxed">
+              아이디어 검증부터 사업계획서, 정부지원사업 전략까지
               <br />
-              링크트리에서 원하는 방식으로 연결하세요.
+              언제든지 연락주세요.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://linktr.ee/fredlab"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-3.5 rounded-xl text-base font-semibold transition-all hover:opacity-90 hover:-translate-y-0.5"
-                style={{
-                  background: "var(--brand-lime)",
-                  color: "var(--brand-forest)",
-                }}
+              <Link
+                href="/contact"
+                className="px-8 py-3.5 rounded-xl text-base font-semibold bg-[#1A3C10] hover:bg-[#2D6A1C] text-white transition-colors shadow-[0_8px_24px_rgba(26,60,16,0.4)]"
               >
-                코칭 신청하기
-              </a>
-              <a
-                href="https://linktr.ee/fredlab"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-3.5 rounded-xl text-base font-semibold transition-all hover:-translate-y-0.5"
-                style={{
-                  background: "rgba(255,255,255,0.15)",
-                  color: "white",
-                  border: "1px solid rgba(255,255,255,0.25)",
-                  backdropFilter: "blur(8px)",
-                }}
-              >
-                프로그램 소개서 받기
-              </a>
+                문의하기 →
+              </Link>
             </div>
 
-            <p className="mt-8 text-sm" style={{ color: "rgba(255,255,255,0.5)" }}>
+            <p className="mt-8 text-sm text-white/30">
               linktr.ee/fredlab · brunch.co.kr/@fredlab
             </p>
           </div>

@@ -1,112 +1,72 @@
-const highlights = [
-  { label: "창업교육 전문", value: "5년+" },
-  { label: "교육 수료생", value: "500+" },
-  { label: "파트너 기관", value: "50+" },
-  { label: "교육 프로그램", value: "20+" },
-];
+import Link from "next/link";
+import GlassCard from "@/components/ui/GlassCard";
+import SectionHeader from "@/components/ui/SectionHeader";
 
-const expertise = [
-  "린 스타트업 방법론",
-  "비즈니스 모델 캔버스",
-  "고객 개발 인터뷰",
-  "MVP 설계 및 검증",
-  "투자 유치 전략",
-  "창업 생태계 네트워킹",
-];
+const badges = ["경영지도사 (재무관리)", "창업보육매니저", "한국기업기술가치평가사"];
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="py-24"
-      style={{ background: "var(--surface)" }}
-    >
+    <section id="about" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Profile visual */}
-          <div className="relative">
-            <div
-              className="w-full aspect-square max-w-sm mx-auto rounded-3xl flex items-center justify-center text-8xl"
-              style={{
-                background: "linear-gradient(135deg, rgba(26,60,16,0.1) 0%, rgba(115,250,121,0.15) 100%)",
-                border: "1px solid var(--border)",
-              }}
-            >
-              🌱
-            </div>
-            {/* Floating badge */}
-            <div
-              className="absolute -bottom-4 -right-4 glass rounded-2xl p-4 max-w-[180px]"
-            >
-              <p className="text-xs font-semibold" style={{ color: "var(--muted)" }}>
-                전문 분야
-              </p>
-              <p className="text-sm font-bold mt-0.5" style={{ color: "var(--brand-forest)" }}>
-                스타트업 창업교육
-              </p>
-            </div>
-          </div>
-
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div>
-            <p
-              className="text-sm font-semibold uppercase tracking-widest mb-3"
-              style={{ color: "var(--brand-lime)", filter: "brightness(0.7)" }}
-            >
-              About
+            <SectionHeader
+              eyebrow="About"
+              title="창업코치 김대홍"
+            />
+            <p className="text-base text-white/65 leading-relaxed mb-4">
+              특허법인 및 컨설팅 業에서 10년 이상의 경력을 보유한 실무형 전문가,
+              경영지도사 자격을 기초로 창업교육·코칭·특허전략을 지원합니다.
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              창업을 가르치는 것이 아니라
-              <br />
-              <span style={{ color: "var(--brand-forest)" }}>창업을 함께합니다.</span>
-            </h2>
-            <p className="text-base leading-relaxed mb-6" style={{ color: "var(--muted)" }}>
-              Fredlab은 예비창업자와 초기 스타트업이 아이디어를 검증하고 실제
-              비즈니스로 성장시킬 수 있도록 돕는 창업교육 전문 기관입니다.
-              이론이 아닌 실전 경험을 바탕으로 한 교육을 제공합니다.
-            </p>
-            <p className="text-base leading-relaxed mb-8" style={{ color: "var(--muted)" }}>
-              공공기관, 대학, 민간 교육기관 등 다양한 파트너와 함께
-              창업생태계 발전에 기여하고 있습니다.
+            <p className="text-base text-white/65 leading-relaxed mb-8">
+              예비·초기 창업가의 아이디어를 사업으로 만드는 과정,
+              그 모든 단계에서 함께합니다.
             </p>
 
-            {/* Expertise tags */}
-            <div className="flex flex-wrap gap-2 mb-10">
-              {expertise.map((e) => (
+            {/* Qualification badges */}
+            <div className="flex flex-wrap gap-2 mb-8">
+              {badges.map((b) => (
                 <span
-                  key={e}
-                  className="text-sm px-3 py-1.5 rounded-lg font-medium"
-                  style={{
-                    background: "rgba(26,60,16,0.08)",
-                    color: "var(--brand-forest)",
-                  }}
+                  key={b}
+                  className="text-xs px-3 py-1.5 rounded-full glass text-white/70 font-medium"
                 >
-                  {e}
+                  {b}
                 </span>
               ))}
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-4">
-              {highlights.map((h) => (
-                <div
-                  key={h.label}
-                  className="rounded-xl p-4"
-                  style={{ background: "var(--background)" }}
-                >
-                  <div
-                    className="text-2xl font-bold font-display"
-                    style={{ color: "var(--brand-forest)" }}
-                  >
-                    {h.value}
-                  </div>
-                  <div className="text-sm mt-0.5" style={{ color: "var(--muted)" }}>
-                    {h.label}
-                  </div>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#2D6A1C] hover:text-[#4a9a2c] transition-colors"
+            >
+              프로필 전체 보기 →
+            </Link>
+          </div>
+
+          {/* Visual card */}
+          <GlassCard elevated className="p-8">
+            <div className="text-center mb-6">
+              <div className="w-20 h-20 rounded-2xl bg-[#1A3C10]/30 border border-[#2D6A1C]/30 flex items-center justify-center text-4xl mx-auto mb-4">
+                🌱
+              </div>
+              <p className="font-bold text-white text-lg">김대홍</p>
+              <p className="text-white/50 text-sm">FREDLAB 대표 · 창업코치</p>
+            </div>
+            <div className="space-y-3">
+              {[
+                "창업교육 · 멘토링 전문",
+                "특허전략 컨설팅 · IP-R&D",
+                "정부지원사업 사업계획서 코칭",
+                "피칭덱 작성 및 발표 코칭",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3 text-sm text-white/60">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#2D6A1C] shrink-0" />
+                  {item}
                 </div>
               ))}
             </div>
-          </div>
+          </GlassCard>
         </div>
       </div>
     </section>

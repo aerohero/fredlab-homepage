@@ -1,94 +1,72 @@
+import Link from "next/link";
+import { tags } from "@/data/services";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background gradient */}
+      {/* Background radial gradient */}
       <div
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(26,60,16,0.15) 0%, transparent 70%), var(--background)",
+            "radial-gradient(ellipse 80% 60% at 50% -10%, rgba(26,60,16,0.25) 0%, transparent 65%), #09090B",
         }}
       />
       {/* Decorative orb */}
       <div
-        className="absolute top-1/4 right-1/4 w-72 h-72 rounded-full blur-3xl -z-10 opacity-20"
-        style={{ background: "var(--brand-lime)" }}
+        className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full blur-3xl -z-10 opacity-10"
+        style={{ background: "#1A3C10" }}
       />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-        {/* Badge */}
+        {/* Brand badge */}
         <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-8">
-          <span
-            className="w-2 h-2 rounded-full animate-pulse"
-            style={{ background: "var(--brand-lime)" }}
-          />
-          <span className="text-sm font-medium" style={{ color: "var(--muted)" }}>
+          <span className="w-2 h-2 rounded-full bg-[#2D6A1C] animate-pulse" />
+          <span className="text-sm font-medium text-white/60">
             창업교육 전문가 · 1:1 코칭 가능
           </span>
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 tracking-tight">
-          아이디어를
-          <br />
-          <span
-            className="font-display"
-            style={{ color: "var(--brand-forest)" }}
-          >
-            실제 비즈니스로.
-          </span>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 tracking-tight">
+          FREDLAB
         </h1>
+        <p className="text-2xl sm:text-3xl font-bold text-white/80 mb-6">창업코치 김대홍</p>
 
-        <p
-          className="text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
-          style={{ color: "var(--muted)" }}
-        >
-          스타트업 교육 · 1:1 창업 코칭 · 기관 출강
-          <br />
-          검증된 방법론으로 창업 여정을 함께합니다.
+        <p className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-4 leading-relaxed">
+          지속가능한 가치창출을 함께 고민합니다.
         </p>
+        <p className="text-base sm:text-lg text-white/50 max-w-xl mx-auto mb-10 leading-relaxed">
+          예비·초기 창업가의 아이디어를 사업으로 만드는 과정,
+          <br />그 모든 단계에서 함께합니다.
+        </p>
+
+        {/* Tag badges */}
+        <div className="flex flex-wrap justify-center gap-2 mb-10">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className="text-xs px-3 py-1.5 rounded-full glass text-white/60 font-medium"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a
-            href="#contact"
-            className="px-8 py-3.5 rounded-xl text-base font-semibold transition-all hover:opacity-90 hover:-translate-y-0.5 shadow-lg"
-            style={{
-              background: "var(--brand-forest)",
-              color: "white",
-              boxShadow: "0 8px 24px rgba(26,60,16,0.3)",
-            }}
+          <Link
+            href="/contact"
+            className="px-8 py-3.5 rounded-xl text-base font-semibold bg-[#1A3C10] hover:bg-[#2D6A1C] text-white transition-colors shadow-[0_8px_24px_rgba(26,60,16,0.4)]"
           >
-            1:1 코칭 신청하기
-          </a>
-          <a
-            href="#services"
-            className="px-8 py-3.5 rounded-xl text-base font-semibold glass transition-all hover:-translate-y-0.5"
-            style={{ color: "var(--foreground)" }}
+            문의하기 →
+          </Link>
+          <Link
+            href="/service"
+            className="px-8 py-3.5 rounded-xl text-base font-semibold glass hover:bg-white/10 text-white transition-colors"
           >
-            서비스 알아보기 →
-          </a>
-        </div>
-
-        {/* Stats */}
-        <div className="mt-20 grid grid-cols-3 gap-6 max-w-lg mx-auto">
-          {[
-            { value: "500+", label: "교육 수료생" },
-            { value: "50+", label: "기관 출강" },
-            { value: "5년+", label: "창업교육 경력" },
-          ].map((stat) => (
-            <div key={stat.label} className="glass rounded-2xl p-4 text-center">
-              <div
-                className="text-2xl font-bold font-display"
-                style={{ color: "var(--brand-forest)" }}
-              >
-                {stat.value}
-              </div>
-              <div className="text-xs mt-1" style={{ color: "var(--muted)" }}>
-                {stat.label}
-              </div>
-            </div>
-          ))}
+            서비스 보기
+          </Link>
         </div>
       </div>
     </section>
