@@ -29,7 +29,7 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
-      <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? ""} />
+      <input type="hidden" name="access_key" value="36a362db-f3c0-47fb-9349-2c5da2114b0a" />
       <input type="hidden" name="subject" value="FREDLAB 홈페이지 문의" />
       <input type="checkbox" name="botcheck" className="hidden" />
 
