@@ -25,7 +25,6 @@ export default function Testimonials() {
               <blockquote className="text-sm text-white/75 leading-relaxed italic">
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
-              <p className="text-xs text-white/35 mt-auto">{t.program}</p>
             </GlassCard>
           ))}
         </div>
