@@ -21,9 +21,9 @@ export default function CTA() {
             </span>
 
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              창업의 다음 단계,
+              비즈니스를 통한 가치창출을
               <br />
-              함께 고민합니다.
+              함께 합니다.
             </h2>
             <p className="text-base sm:text-lg text-white/60 max-w-xl mx-auto mb-10 leading-relaxed">
               아이디어 검증부터 사업계획서, 정부지원사업 전략까지

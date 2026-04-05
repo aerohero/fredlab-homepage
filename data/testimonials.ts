@@ -2,21 +2,21 @@ export const testimonials = [
   {
     id: 1,
     badge: "신창사 최종 선정",
-    industry: "전통주 패키지 · F&B",
+    industry: "전통주 · F&B",
     quote:
       "서류부터 발표까지 많은 부분 도움주셔서 제가 올해 정부지원사업을 시작할 수 있게 되었습니다.",
   },
   {
     id: 2,
     badge: "청년식품창업 우수상",
-    industry: "비건 쿠키 · F&B",
+    industry: "비건식품 · F&B",
     quote:
       "이번 발표에서는 스스로도 깔끔하게 정리된 흐름과 전달력을 느낄 수 있었습니다.",
   },
   {
     id: 3,
-    badge: "SAY트랙 최우수상",
-    industry: "건축 법령 AI · 테크",
+    badge: "창업경진대회 최우수상",
+    industry: "AI · 테크",
     quote:
       "멘토님께서 주신 조언 덕분에 최우수상도 수상할 수 있었습니다.",
   },

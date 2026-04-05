@@ -74,7 +74,7 @@ export default function ServicePage() {
           <SectionHeader
             eyebrow="Service"
             title="프레드랩이 제공하는 창업 지원 서비스"
-            subtitle="예비·초기 창업가의 성장을 위한 교육, 멘토링, 특허전략 서비스"
+            subtitle="예비·초기 창업가를 위한 맞춤형 린스타트업 · 로컬창업 교육, 코칭, 특허 · 브랜드 전략"
             center
           />
 

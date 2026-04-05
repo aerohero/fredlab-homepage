@@ -13,7 +13,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-white/50 leading-relaxed">
-              지속가능한 가치창출을 함께 고민합니다.
+              비즈니스를 통한 가치창출을 함께 합니다.
               <br />
               창업교육 · 멘토링 · 특허전략 · 강의/특강
             </p>

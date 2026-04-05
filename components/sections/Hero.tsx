@@ -34,7 +34,7 @@ export default function Hero() {
         <p className="text-2xl sm:text-3xl font-bold text-white/80 mb-6">창업코치 김대홍</p>
 
         <p className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-4 leading-relaxed">
-          지속가능한 가치창출을 함께 고민합니다.
+          비즈니스를 통한 가치창출을 함께 합니다.
         </p>
         <p className="text-base sm:text-lg text-white/50 max-w-xl mx-auto mb-10 leading-relaxed">
           예비·초기 창업가의 아이디어를 사업으로 만드는 과정,

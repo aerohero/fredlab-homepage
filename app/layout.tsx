@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Fredlab" }],
   openGraph: {
     title: "FREDLAB | 창업교육 & 멘토링 전문",
-    description: "지속가능한 가치창출을 함께 고민합니다.",
+    description: "비즈니스를 통한 가치창출을 함께 합니다.",
     url: "https://fredlab-homepage.vercel.app",
     siteName: "FREDLAB",
     locale: "ko_KR",
