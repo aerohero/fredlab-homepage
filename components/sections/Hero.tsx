@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-8">
           <span className="w-2 h-2 rounded-full bg-[#2D6A1C] animate-pulse" />
           <span className="text-sm font-medium text-white/60">
-            창업교육 전문가 · 1:1 코칭 가능
+            창업교육 전문가 · 1:1 코칭
           </span>
         </div>
 
