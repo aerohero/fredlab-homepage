@@ -33,10 +33,10 @@ export const services = [
 ];
 
 export const stats = [
-  { value: "596+", unit: "회", label: "코칭/멘토링 진행 횟수" },
-  { value: "148+", unit: "팀", label: "코칭/멘토링 창업팀 수" },
+  { value: "650+", unit: "회", label: "코칭/멘토링 진행 횟수" },
+  { value: "250+", unit: "팀", label: "코칭/멘토링 창업팀 수" },
   { value: "15+", unit: "년", label: "특허·창업 분야 경력" },
-  { value: "4", unit: "분야", label: "창업교육 · 멘토링 · 특허 · 강의" },
+  { value: "4", unit: "분야", label: "창업교육(강의) · 코칭 · 특허 · 자금조달" },
 ];
 
 export const tags = ["#창업교육", "#멘토링", "#사업계획서", "#피칭덱", "#특허전략"];

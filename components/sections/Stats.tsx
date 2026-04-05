@@ -17,7 +17,7 @@ export default function Stats() {
           ))}
         </div>
         <p className="text-xs text-white/30 text-center mt-4">
-          ※ 코칭/멘토링 횟수 및 팀 수는 2024.10 기준
+          ※ 코칭/멘토링 횟수 및 팀 수는 2026.03. 기준
         </p>
       </div>
     </section>
