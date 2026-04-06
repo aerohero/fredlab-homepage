@@ -6,6 +6,7 @@ import Link from "next/link";
 const navLinks = [
   { href: "/service", label: "서비스" },
   { href: "/portfolio", label: "실적" },
+  { href: "/#education", label: "온라인 교육" },
   { href: "/about", label: "소개" },
   { href: "/contact", label: "문의" },
 ];
