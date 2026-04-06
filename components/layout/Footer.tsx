@@ -70,8 +70,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/10 text-xs text-white/30">
-          © {new Date().getFullYear()} FREDLAB · 창업코치 김대홍. All rights reserved.
+        <div className="mt-10 pt-6 border-t border-white/10 text-xs text-white/30 space-y-1">
+          <p>서울시 성동구 왕십리로 326, 623A</p>
+          <p>대표자: 김대홍 · 사업자등록번호: 501-64-20821 · 통신판매업신고: 2021-서울성동-02746</p>
+          <p className="mt-2">© {new Date().getFullYear()} FREDLAB · 창업코치 김대홍. All rights reserved.</p>
         </div>
       </div>
     </footer>
