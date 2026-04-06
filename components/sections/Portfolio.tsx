@@ -26,7 +26,7 @@ export default function Portfolio() {
         <div className="text-center">
           <Link
             href="/portfolio"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass hover:bg-white/10 text-sm font-semibold text-white transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#1A3C10] hover:bg-[#2D6A1C] text-sm font-semibold text-white transition-colors"
           >
             전체 실적 보기 →
           </Link>
