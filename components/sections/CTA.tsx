@@ -41,7 +41,7 @@ export default function CTA() {
             </div>
 
             <p className="mt-8 text-sm text-white/30">
-              linktr.ee/fredlab · brunch.co.kr/@fredlab
+              instagram.com/fredlab.dk · linktr.ee/fredlab · brunch.co.kr/@fredlab
             </p>
           </div>
         </div>

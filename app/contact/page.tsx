@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 const contactInfo = [
+  { label: "Instagram", value: "instagram.com/fredlab.dk", href: "https://www.instagram.com/fredlab.dk" },
   { label: "Linktree", value: "linktr.ee/fredlab", href: "https://linktr.ee/fredlab" },
   { label: "Brunch", value: "brunch.co.kr/@fredlab", href: "https://brunch.co.kr/@fredlab" },
 ];
