@@ -7,7 +7,7 @@ import { portfolioData } from "@/data/portfolio";
 
 export const metadata: Metadata = {
   title: "실적",
-  description: "FREDLAB — 2011년부터 현재까지 누적 창업교육·멘토링·특허전략 실적",
+  description: "stayCurious — 2011년부터 현재까지 누적 창업교육·멘토링·특허전략 실적",
 };
 
 export default function PortfolioPage() {

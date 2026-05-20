@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-8">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <span className="font-display text-lg font-bold text-white">FREDLAB</span>
+              <span className="font-display text-lg font-bold text-white">stayCurious</span>
               <span className="text-xs px-1.5 py-0.5 rounded font-semibold bg-[#1A3C10] text-white/90">
                 창업교육
               </span>
@@ -83,7 +83,7 @@ export default function Footer() {
         <div className="mt-10 pt-6 border-t border-white/10 text-xs text-white/30 space-y-1">
           <p>서울시 성동구 왕십리로 326, 623A</p>
           <p>대표자: 김대홍 · 사업자등록번호: 501-64-20821 · 통신판매업신고: 2021-서울성동-02746</p>
-          <p className="mt-2">© {new Date().getFullYear()} FREDLAB · 창업코치 김대홍. All rights reserved.</p>
+          <p className="mt-2">© {new Date().getFullYear()} stayCurious · 창업코치 김대홍. All rights reserved.</p>
         </div>
       </div>
     </footer>

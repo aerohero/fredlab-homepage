@@ -11,18 +11,18 @@ const capriola = Capriola({
 
 export const metadata: Metadata = {
   title: {
-    default: "FREDLAB | 창업교육 & 멘토링 전문",
-    template: "%s | FREDLAB",
+    default: "stayCurious | 창업교육 & 멘토링 전문",
+    template: "%s | stayCurious",
   },
   description:
     "창업교육, 멘토링, 특허전략 전문 코치 김대홍. 예비·초기 창업가의 아이디어를 사업으로 만드는 과정, 그 모든 단계에서 함께합니다.",
-  keywords: ["창업교육", "창업멘토링", "스타트업", "창업코치", "프레드랩", "Fredlab", "특허전략"],
-  authors: [{ name: "Fredlab" }],
+  keywords: ["창업교육", "창업멘토링", "스타트업", "창업코치", "stayCurious", "특허전략"],
+  authors: [{ name: "stayCurious" }],
   openGraph: {
-    title: "FREDLAB | 창업교육 & 멘토링 전문",
+    title: "stayCurious | 창업교육 & 멘토링 전문",
     description: "비즈니스를 통한 가치창출을 함께 합니다.",
-    url: "https://fredlab-homepage.vercel.app",
-    siteName: "FREDLAB",
+    url: "https://staycuriousco.io",
+    siteName: "stayCurious",
     locale: "ko_KR",
     type: "website",
   },

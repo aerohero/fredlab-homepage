@@ -29,7 +29,7 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 tracking-tight">
-          FREDLAB
+          stayCurious
         </h1>
         <p className="text-2xl sm:text-3xl font-bold text-white/80 mb-6">창업코치 김대홍</p>
 

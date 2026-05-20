@@ -51,7 +51,7 @@ export default function About() {
                 🌱
               </div>
               <p className="font-bold text-white text-lg">김대홍</p>
-              <p className="text-white/50 text-sm">FREDLAB 대표 · 창업코치</p>
+              <p className="text-white/50 text-sm">stayCurious 대표 · 창업코치</p>
             </div>
             <div className="space-y-3">
               {[

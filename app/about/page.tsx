@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "소개",
-  description: "창업코치 김대홍 — FREDLAB 대표 소개, 경력, 자격증",
+  description: "창업코치 김대홍 — stayCurious 대표 소개, 경력, 자격증",
 };
 
 const certificates = [
@@ -34,7 +34,7 @@ export default function AboutPage() {
           <SectionHeader
             eyebrow="About"
             title="창업코치 김대홍"
-            subtitle="FREDLAB 대표"
+            subtitle="stayCurious 대표"
             center
           />
 
@@ -45,7 +45,7 @@ export default function AboutPage() {
                 🌱
               </div>
               <h2 className="font-bold text-white text-xl mb-1">김대홍</h2>
-              <p className="text-white/50 text-sm mb-6">FREDLAB 대표 · 창업코치</p>
+              <p className="text-white/50 text-sm mb-6">stayCurious 대표 · 창업코치</p>
 
               <div className="space-y-2 mb-6">
                 {certificates.map((cert) => (

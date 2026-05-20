@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* FREDLAB Design Tokens — Dark Glassmorphism */
+  /* stayCurious Design Tokens — Dark Glassmorphism */
   --color-background: #09090B;
   --color-accent: #1A3C10;
   --color-accent-light: #2D6A1C;

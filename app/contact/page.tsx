@@ -7,7 +7,7 @@ import ContactForm from "@/components/sections/ContactForm";
 
 export const metadata: Metadata = {
   title: "문의",
-  description: "FREDLAB 창업교육 · 멘토링 문의 — 언제든지 연락주세요.",
+  description: "stayCurious 창업교육 · 멘토링 문의 — 언제든지 연락주세요.",
 };
 
 const contactInfo = [

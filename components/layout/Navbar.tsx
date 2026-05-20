@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
             <span className="font-display text-xl font-bold tracking-wide text-white">
-              FREDLAB
+              stayCurious
             </span>
             <span className="text-xs px-1.5 py-0.5 rounded font-semibold bg-[#1A3C10] text-white/90">
               창업교육
